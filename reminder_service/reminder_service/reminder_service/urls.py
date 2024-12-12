@@ -1,18 +1,16 @@
 """
-URL configuration for reminder_service project.
+URL Configuration for the Reminder Service
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+This file defines the URL patterns for the reminder service application. Each URL pattern maps an incoming URL to a specific view function or class-based view.
+
+URL Patterns:
+
+- `/`: Redirects to the home page.
+- `/reminders/`: Displays a list of all reminders.
+- `/reminders/create/`: Form for creating a new reminder.
+- `/reminders/<int:reminder_id>/`: Displays details of a specific reminder.
+- `/reminders/<int:reminder_id>/edit/`: Form for editing a reminder.
+- `/reminders/<int:reminder_id>/delete/`: Deletes a reminder.
 """
 from django.contrib import admin
 from django.urls import path
