@@ -53,4 +53,5 @@ This project is a microservices-based Event Calendar and Reminder System. It is 
 					  The project is dockerized. Use the docker-compose.yml to start all services.
 
 					  `bash
-					  docker-compose up --build
+					  docker-compose up --build`
+
