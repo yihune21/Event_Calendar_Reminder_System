@@ -13,8 +13,9 @@ URL Patterns:
 - `/reminders/<int:reminder_id>/delete/`: Deletes a reminder.
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 
 urlpatterns = [
+    path('reminders/', include('reminders.urls')),
     path('admin/', admin.site.urls),
 ]
