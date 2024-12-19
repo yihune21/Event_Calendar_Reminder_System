@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar Service CRUD Operations</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calendar Service</title>
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Calendar Service</h1>
+    <h1 class="text-9xl">Calendar Service</h1>
 
     <!-- Create Event Form -->
     <h2>Create Event</h2>
@@ -67,6 +69,5 @@
     <button id="listEventsButton">List Events</button>
     <div id="eventsList"></div>
 
-    <script src="app.js"></script>
 </body>
 </html>
