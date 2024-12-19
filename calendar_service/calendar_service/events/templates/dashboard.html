@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>   
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- <h1>Dashboard</h1>
+    <h2>Events</h2>
+    <ul id="events"></ul> -->
+    
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Navbar -->
+        <nav class="bg-gray-800 text-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-xl font-bold">Event Calendar</a>
+                <div>
+                    <a href="#" class="px-4">Home</a>
+                    <a href="#" class="px-4">Profile</a>
+                    <a href="#" class="px-4">Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex flex-1">
+            <!-- Sidebar -->
+            <aside class="bg-gray-700 text-white w-64 p-4">
+                <ul>
+                    <li class="mb-4"><a href="#" class="block py-2 px-4 rounded hover:bg-gray-600">Dashboard</a></li>
+                    <li class="mb-4"><a href="#" class="block py-2 px-4 rounded hover:bg-gray-600">Events</a></li>
+                    <li class="mb-4"><a href="#" class="block py-2 px-4 rounded hover:bg-gray-600">Settings</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="flex-1 p-4">
+                <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
+                <h2 class="text-xl mb-2">Events</h2>
+                <ul id="events" class="list-disc pl-5"></ul>
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
