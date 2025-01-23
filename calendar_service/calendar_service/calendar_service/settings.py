@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -81,6 +80,11 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+MONGO_DB_SETTINGS = {
+    "HOST": "mongodb://localhost:27017/",
+    "DATABASE_NAME": "event_calendar"
+}
+
 
 
 # Password validation
