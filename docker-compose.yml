@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  calendar_service:
+    build: ./calendar_service/calendar_service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./calendar_service:/app
+
+  event_service:
+    build: ./reminder_service/reminder_service
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./reminder_service:/app
+
+  user_service:
+    build: ./user_service/user_service
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./user_service:/app
