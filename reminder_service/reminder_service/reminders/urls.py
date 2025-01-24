@@ -1,7 +1,6 @@
 from django.urls import path
-
-from . import views
+from .views import ReminderAPIView
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path('api/reminders/', ReminderAPIView.as_view(), name='reminders'),
 ]
